@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="BooksAuthors" Relationship="Self.BooksAuthors_fk1" FromRole="Authors" ToRole="BooksAuthors" />
+  </EntityType>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GenreId" Type="Int32" Nullable="false" />
+    <Property Name="PublisherId" Type="Int32" Nullable="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Pages" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Genre" Relationship="Self.Books_fk0" FromRole="Books" ToRole="Genres" />
+    <NavigationProperty Name="Publisher" Relationship="Self.Books_fk1" FromRole="Books" ToRole="Publishers" />
+    <NavigationProperty Name="BooksAuthors" Relationship="Self.BooksAuthors_fk0" FromRole="Books" ToRole="BooksAuthors" />
+    <NavigationProperty Name="Journals" Relationship="Self.Journal_fk0" FromRole="Books" ToRole="Journal" />
+  </EntityType>
+  <EntityType Name="BooksAuthor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookId" Type="Int32" Nullable="false" />
+    <Property Name="AuthorId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Author" Relationship="Self.BooksAuthors_fk1" FromRole="BooksAuthors" ToRole="Authors" />
+    <NavigationProperty Name="Book" Relationship="Self.BooksAuthors_fk0" FromRole="BooksAuthors" ToRole="Books" />
+  </EntityType>
+  <EntityType Name="Genre">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Self.Books_fk0" FromRole="Genres" ToRole="Books" />
+  </EntityType>
+  <EntityType Name="Journal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookId" Type="Int32" Nullable="false" />
+    <Property Name="ManagerId" Type="Int32" Nullable="false" />
+    <Property Name="ReaderId" Type="Int32" Nullable="false" />
+    <Property Name="IssueDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ReturnDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Book" Relationship="Self.Journal_fk0" FromRole="Journal" ToRole="Books" />
+    <NavigationProperty Name="Manager" Relationship="Self.Journal_fk1" FromRole="Journal" ToRole="Managers" />
+    <NavigationProperty Name="Reader" Relationship="Self.Journal_fk2" FromRole="Journal" ToRole="Readers" />
+  </EntityType>
+  <EntityType Name="Manager">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Contact" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Journals" Relationship="Self.Journal_fk1" FromRole="Managers" ToRole="Journal" />
+  </EntityType>
+  <EntityType Name="Publisher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Self.Books_fk1" FromRole="Publishers" ToRole="Books" />
+  </EntityType>
+  <EntityType Name="Reader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Contact" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Journals" Relationship="Self.Journal_fk2" FromRole="Readers" ToRole="Journal" />
+  </EntityType>
+  <Association Name="BooksAuthors_fk1">
+    <End Role="Authors" Type="Self.Author" Multiplicity="1" />
+    <End Role="BooksAuthors" Type="Self.BooksAuthor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BooksAuthors">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Books_fk0">
+    <End Role="Genres" Type="Self.Genre" Multiplicity="1" />
+    <End Role="Books" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genres">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="GenreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Books_fk1">
+    <End Role="Publishers" Type="Self.Publisher" Multiplicity="1" />
+    <End Role="Books" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publishers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="PublisherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BooksAuthors_fk0">
+    <End Role="Books" Type="Self.Book" Multiplicity="1" />
+    <End Role="BooksAuthors" Type="Self.BooksAuthor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BooksAuthors">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Journal_fk0">
+    <End Role="Books" Type="Self.Book" Multiplicity="1" />
+    <End Role="Journal" Type="Self.Journal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Journal">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Journal_fk1">
+    <End Role="Managers" Type="Self.Manager" Multiplicity="1" />
+    <End Role="Journal" Type="Self.Journal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Managers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Journal">
+        <PropertyRef Name="ManagerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Journal_fk2">
+    <End Role="Readers" Type="Self.Reader" Multiplicity="1" />
+    <End Role="Journal" Type="Self.Journal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Readers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Journal">
+        <PropertyRef Name="ReaderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Database1Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Authors" EntityType="Self.Author" />
+    <EntitySet Name="Books" EntityType="Self.Book" />
+    <EntitySet Name="BooksAuthors" EntityType="Self.BooksAuthor" />
+    <EntitySet Name="Genres" EntityType="Self.Genre" />
+    <EntitySet Name="Journals" EntityType="Self.Journal" />
+    <EntitySet Name="Managers" EntityType="Self.Manager" />
+    <EntitySet Name="Publishers" EntityType="Self.Publisher" />
+    <EntitySet Name="Readers" EntityType="Self.Reader" />
+    <AssociationSet Name="BooksAuthors_fk1" Association="Self.BooksAuthors_fk1">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="BooksAuthors" EntitySet="BooksAuthors" />
+    </AssociationSet>
+    <AssociationSet Name="Books_fk0" Association="Self.Books_fk0">
+      <End Role="Genres" EntitySet="Genres" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="Books_fk1" Association="Self.Books_fk1">
+      <End Role="Publishers" EntitySet="Publishers" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="BooksAuthors_fk0" Association="Self.BooksAuthors_fk0">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="BooksAuthors" EntitySet="BooksAuthors" />
+    </AssociationSet>
+    <AssociationSet Name="Journal_fk0" Association="Self.Journal_fk0">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="Journal" EntitySet="Journals" />
+    </AssociationSet>
+    <AssociationSet Name="Journal_fk1" Association="Self.Journal_fk1">
+      <End Role="Managers" EntitySet="Managers" />
+      <End Role="Journal" EntitySet="Journals" />
+    </AssociationSet>
+    <AssociationSet Name="Journal_fk2" Association="Self.Journal_fk2">
+      <End Role="Readers" EntitySet="Readers" />
+      <End Role="Journal" EntitySet="Journals" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
