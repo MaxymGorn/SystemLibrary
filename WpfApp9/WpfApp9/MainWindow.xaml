@@ -33,30 +33,25 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="250"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="listViewItem1">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="listViewItem2">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="listViewItem3">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="listViewItem4">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="listViewItem5">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="listViewItem6">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
@@ -72,6 +67,11 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="listViewItem1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="button">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
@@ -105,6 +105,48 @@
         </EventTrigger>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
             <BeginStoryboard x:Name="CloseMenu_BeginStoryboard" Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu2">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu2">
+            <BeginStoryboard x:Name="CloseMenu_BeginStoryboard2" Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu3">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu3">
+            <BeginStoryboard x:Name="CloseMenu_BeginStoryboard3" Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu4">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu4">
+            <BeginStoryboard x:Name="CloseMenu_BeginStoryboard4" Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu5">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu5">
+            <BeginStoryboard x:Name="CloseMenu_BeginStoryboard5" Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu6">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu6">
+            <BeginStoryboard x:Name="CloseMenu_BeginStoryboard6" Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu7">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu7">
+            <BeginStoryboard x:Name="CloseMenu_BeginStoryboard7" Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu8">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu8">
+            <BeginStoryboard x:Name="CloseMenu_BeginStoryboard8" Storyboard="{StaticResource CloseMenu}"/>
         </EventTrigger>
     </Window.Triggers>
 
@@ -155,23 +197,7 @@
                 </Button>
             </StackPanel>
             <ListView >
-                <ListViewItem x:Name="listViewItem1" Height="60" RenderTransformOrigin="0.5,0.5"  >
-                    <ListViewItem.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </ListViewItem.RenderTransform>
-                    <StackPanel Orientation="Horizontal" Margin="10 0">
-                        <Button Background="Transparent" BorderThickness="0"  HorizontalAlignment="Left">
-                            <materialDesign:PackIcon Kind="AccountSearch" Width="30" Height="30" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Left"/>
-                        </Button>
-                        <TextBlock Text="Главная" Margin="10" VerticalAlignment="Center"/>
-                    </StackPanel>
 
-                </ListViewItem>
                 <ListViewItem x:Name="listViewItem2" Height="60" RenderTransformOrigin="0.5,0.5">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
@@ -182,13 +208,17 @@
                         </TransformGroup>
                     </ListViewItem.RenderTransform>
                     <StackPanel Orientation="Horizontal" Margin="10 0">
-                        <Button Background="Transparent" BorderThickness="0" HorizontalAlignment="Left">
-                            <materialDesign:PackIcon Kind="ContentSave" Width="30" Height="30" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Left"/>
+                        <Button Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" Click="Button_Click_4">
+                            <materialDesign:PackIcon Kind="Man" Width="30" Height="30" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Left"/>
                         </Button>
-                        <TextBlock Text="Менеджери" Margin="10" VerticalAlignment="Center"/>
+                        <TextBlock Text="Менеджери"
+                                   Margin="10"
+                                   VerticalAlignment="Center"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem x:Name="listViewItem3" Height="60" RenderTransformOrigin="0.5,0.5">
+                <ListViewItem x:Name="listViewItem3"
+                              Height="60"
+                              RenderTransformOrigin="0.5,0.5">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -197,14 +227,32 @@
                             <TranslateTransform/>
                         </TransformGroup>
                     </ListViewItem.RenderTransform>
-                    <StackPanel Orientation="Horizontal" Margin="10 0" Width="215">
-                        <Button Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" Width="65" >
-                            <materialDesign:PackIcon Kind="BasketFill" Width="30" Height="30" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Left"/>
+                    <StackPanel Orientation="Horizontal"
+                                Margin="10 0"
+                                Width="215">
+                        <Button Background="Transparent"
+                                BorderThickness="0"
+                                HorizontalAlignment="Left"
+                                Width="65"
+                                Click="Button_Click_5" >
+                            <materialDesign:PackIcon
+                                Kind="Library"
+                                Width="30"
+                                Height="30"
+                                VerticalAlignment="Center"
+                                Margin="0"
+                                HorizontalAlignment="Left"/>
                         </Button>
-                        <TextBlock Text="Библиотекари" Margin="10" VerticalAlignment="Center" Width="126"/>
+                        <TextBlock Text="Библиотекари"
+                                   Margin="10"
+                                   VerticalAlignment="Center"
+                                   Width="126"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem x:Name="listViewItem4" Height="60" RenderTransformOrigin="0.5,0.5" Width="250">
+                <ListViewItem x:Name="listViewItem4"
+                              Height="60"
+                              RenderTransformOrigin="0.5,0.5"
+                              Width="250">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -213,14 +261,31 @@
                             <TranslateTransform/>
                         </TransformGroup>
                     </ListViewItem.RenderTransform>
-                    <StackPanel Orientation="Horizontal" Width="240">
-                        <Button Command="{Binding FileAddcolletion}"  Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" Width="72">
-                            <materialDesign:PackIcon Kind="FolderDownload" Width="49" Height="30" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Left"/>
+                    <StackPanel Orientation="Horizontal"
+                                Width="240">
+                        <Button Background="Transparent"
+                                BorderThickness="0"
+                                HorizontalAlignment="Left"
+                                Width="72"
+                                Click="Button_Click_6">
+                            <materialDesign:PackIcon
+                                Kind="User"
+                                Width="49"
+                                Height="30"
+                                VerticalAlignment="Center"
+                                Margin="0"
+                                HorizontalAlignment="Left"/>
                         </Button>
-                        <TextBlock Text="Читатели" Margin="10" VerticalAlignment="Center" Width="153"/>
+                        <TextBlock Text="Читатели"
+                                   Margin="10"
+                                   VerticalAlignment="Center"
+                                   Width="153"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem x:Name="listViewItem5" Height="60" RenderTransformOrigin="0.5,0.5" Width="250">
+                <ListViewItem x:Name="listViewItem5"
+                              Height="60"
+                              RenderTransformOrigin="0.5,0.5"
+                              Width="250">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -229,14 +294,27 @@
                             <TranslateTransform/>
                         </TransformGroup>
                     </ListViewItem.RenderTransform>
-                    <StackPanel Orientation="Horizontal" Width="240">
-                        <Button Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" Width="72">
-                            <materialDesign:PackIcon Kind="FolderDownload" Width="49" Height="30" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Left"/>
+                    <StackPanel Orientation="Horizontal"
+                                Width="240">
+                        <Button Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" Width="72" Click="Button_Click_7">
+                            <materialDesign:PackIcon
+                                Kind="Category"
+                                Width="49"
+                                Height="30"
+                                VerticalAlignment="Center"
+                                Margin="0"
+                                HorizontalAlignment="Left"/>
                         </Button>
-                        <TextBlock Text="Категории" Margin="10" VerticalAlignment="Center" Width="153"/>
+                        <TextBlock Text="Категории"
+                                   Margin="10"
+                                   VerticalAlignment="Center"
+                                   Width="153"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem x:Name="listViewItem6" Height="60" RenderTransformOrigin="0.5,0.5" Width="250">
+                <ListViewItem x:Name="listViewItem6"
+                              Height="60"
+                              RenderTransformOrigin="0.5,0.5"
+                              Width="250">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -245,11 +323,26 @@
                             <TranslateTransform/>
                         </TransformGroup>
                     </ListViewItem.RenderTransform>
-                    <StackPanel Orientation="Horizontal" Width="240">
-                        <Button Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" Width="72">
-                            <materialDesign:PackIcon Kind="FolderDownload" Width="49" Height="30" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Left"/>
+                    <StackPanel Orientation="Horizontal"
+                                Width="240">
+                        <Button Background="Transparent"
+                                BorderThickness="0"
+                                HorizontalAlignment="Left"
+                                Width="72"
+                                Click="Button_Click_8">
+                            <materialDesign:PackIcon 
+                                Kind="Read"
+                                Width="49"
+                                Height="30"
+                                VerticalAlignment="Center"
+                                Margin="0"
+                                HorizontalAlignment="Left"/>
                         </Button>
-                        <TextBlock Text="Авторы" Margin="10" VerticalAlignment="Center" Width="153"/>
+                        <TextBlock 
+                            Text="Авторы"
+                            Margin="10"
+                            VerticalAlignment="Center"
+                            Width="153"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem x:Name="listViewItem7" Height="60" RenderTransformOrigin="0.5,0.5" Width="250">
@@ -262,8 +355,8 @@
                         </TransformGroup>
                     </ListViewItem.RenderTransform>
                     <StackPanel Orientation="Horizontal" Width="240">
-                        <Button Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" Width="72">
-                            <materialDesign:PackIcon Kind="FolderDownload" Width="49" Height="30" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Left"/>
+                        <Button Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" Width="72" Click="Button_Click_9">
+                            <materialDesign:PackIcon Kind="Book" Width="49" Height="30" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Left"/>
                         </Button>
                         <TextBlock Text="Книги" Margin="10" VerticalAlignment="Center" Width="153"/>
                     </StackPanel>
@@ -278,15 +371,59 @@
                         </TransformGroup>
                     </ListViewItem.RenderTransform>
                     <StackPanel Orientation="Horizontal" Width="240">
-                        <Button Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" Width="72">
-                            <materialDesign:PackIcon Kind="FolderDownload" Width="49" Height="30" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Left"/>
+                        <Button Background="Transparent"
+                                BorderThickness="0"
+                                HorizontalAlignment="Left"
+                                Width="72"
+                                Click="Button_Click_10">
+                            <materialDesign:PackIcon Kind="Register"
+                                                     Width="49"
+                                                     Height="30"
+                                                     VerticalAlignment="Center"
+                                                     Margin="0"
+                                                     HorizontalAlignment="Left"/>
                         </Button>
-                        <TextBlock Text="Журнал" Margin="10" VerticalAlignment="Center" Width="153"/>
+                        <TextBlock Text="Журнал"
+                                   Margin="10"
+                                   VerticalAlignment="Center"
+                                   Width="153"/>
                     </StackPanel>
                 </ListViewItem>
+                <ListViewItem x:Name="listViewItem1"
+                              Height="60"
+                              RenderTransformOrigin="0.5,0.5"  >
+                    <ListViewItem.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ListViewItem.RenderTransform>
+                    <StackPanel Orientation="Horizontal"
+                                Margin="10 0">
+                        <Button Background="Transparent"
+                                BorderThickness="0"
+                                HorizontalAlignment="Left"
+                                Click="Button_Click_11">
+                            <materialDesign:PackIcon
+                                Kind="Publish"
+                                Width="30"
+                                Height="30"
+                                VerticalAlignment="Center"
+                                Margin="0"
+                                HorizontalAlignment="Left"/>
+                        </Button>
+                        <TextBlock Text="Издатели"
+                                   Margin="10"
+                                   VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                </ListViewItem>
             </ListView>
+
         </StackPanel>
-        
+
         <Grid x:Name="GridMain" Background="White" Width="1024" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
             <Grid.RenderTransform>
                 <TransformGroup>
@@ -309,7 +446,14 @@
                         <ImageBrush  Stretch="UniformToFill"/>
                     </Ellipse.Fill>
                 </Ellipse>
-                <TextBlock Text="Менеджери" Foreground="White" FontSize="28" FontFamily="Nirmala UI Semilight" Margin="10 100" VerticalAlignment="Top"/>
+                <TextBlock 
+                    Text="Менеджери"
+                    Foreground="White"
+                    FontSize="28"
+                    FontFamily="Nirmala UI Semilight"
+                    Margin="10 100"
+                    Name="Name_menu"
+                    VerticalAlignment="Top"/>
                 <StackPanel Margin="0 150">
                     <Grid Height="60" Margin="20 50 20 0">
                         <Grid.ColumnDefinitions>
@@ -339,50 +483,50 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="38*"/>
+                            <ColumnDefinition Width="11*"/>
+                            <ColumnDefinition Width="201*"/>
+                            <ColumnDefinition Width="250*"/>
+                            <ColumnDefinition Width="250*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button x:Name="ButtonCloseMenu" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5" Click="ButtonCloseMenu_Click" Visibility="Collapsed">
+                        <Button x:Name="ButtonCloseMenu" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,0" Click="ButtonCloseMenu_Click" Visibility="Collapsed">
                             <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
                         </Button>
                         <Button ToolTip="Меню" x:Name="ButtonOpenMenu" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" Click="ButtonOpenMenu_Click">
                             <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
                         </Button>
-                        <TextBlock Text="Менеджери" Foreground="{DynamicResource text_brush1}" FontSize="30" FontWeight="Bold" Margin="5" Grid.Row="1"/>
-                        <Button Click="Button_Click_1"
+                        <TextBlock Text="Менеджери" Foreground="{DynamicResource text_brush1}" FontSize="30" FontWeight="Bold" Margin="5,5,4.4,4.6" Grid.Row="1" Grid.ColumnSpan="3"/>
+                        <Button Click="Button_Click_Delete"
                         Style="{StaticResource CircleButton}"
                         ToolTip=">> Удалить"
                         Height="100" Grid.Row="4"
-                        Grid.Column="1" Width="100"
+                        Grid.Column="3" Width="100"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center"
-                        Background="Transparent" >
+                        Background="Transparent" Margin="75.6,32.6,74.8,33" >
                             <Image Source="05-128.png"  Stretch="Fill" Width="100" Height="100" ></Image>
                         </Button>
-
-                        <Button Click="Button_Click_3"  Style="{StaticResource CircleButton}"  ToolTip=">> Сохранить" Height="100" Grid.Row="4" Grid.Column="2" Width="100"
+                        <Button Click="Button_Click_Save"  Style="{StaticResource CircleButton}"  ToolTip=">> Сохранить" Height="100" Grid.Row="4" Grid.Column="4" Width="100"
                         VerticalAlignment="Center" HorizontalAlignment="Center"
-                        Background="Transparent"   >
+                        Background="Transparent" Margin="75.2,32.6,75.2,33"   >
                             <Image Source="Floppy-icon.png"  Stretch="Uniform" Width="auto" ></Image>
                         </Button>
-
-                        <Button Click="Button_Click_2"
+                        <Button Click="Button_Click_Add"
                         Style="{StaticResource CircleButton}"
                         ToolTip=">> Добавить"
                         Height="100"
                         Grid.Row="4"
-                        Grid.Column="0"
+                        Grid.Column="2"
                         Width="100"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center"
-                        Background="Transparent" >
+                        Background="Transparent" Margin="25.933,32.6,75.4,33" >
                             <Image Source="text-plus-icon.png"
                            Stretch="Fill"
-                           Width="auto" Height="104" ></Image>
+                           Width="auto" Height="100" ></Image>
                         </Button>
-                        <Grid Grid.Row="2" Grid.RowSpan="3"  Grid.ColumnSpan="3" >
+                        <Grid Grid.Row="2" Grid.RowSpan="3"  Grid.ColumnSpan="5" Margin="0,0.4,0.2,0" >
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
                                 <RowDefinition></RowDefinition>
@@ -402,7 +546,7 @@
                                         </TextBlock>
                                     </Label>
                                     <Border Height="30"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
-                                        <TextBox  Name="textbox1" Foreground="Black" >
+                                        <TextBox  Name="textbox_manager_fullname" Foreground="Black" >
                                         </TextBox>
                                     </Border>
                                 </DockPanel>
@@ -415,7 +559,7 @@
                                         </TextBlock>
                                     </Label>
                                     <Border Height="60"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
-                                        <TextBox  Name="textbox2" Foreground="Black" >
+                                        <TextBox  Name="textbox_manager_contact" Foreground="Black" >
                                         </TextBox>
                                     </Border>
 
@@ -458,10 +602,10 @@
                                         <Style.Setters>
                                             <Setter Property="Background">
                                                 <Setter.Value>
-                                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                                        <GradientStop Color="Black" Offset="0.003"/>
-                                                        <GradientStop Color="#FF2A65C8" Offset="1"/>
-                                                    </LinearGradientBrush>
+                                                    <RadialGradientBrush>
+                                                        <GradientStop Color="#FF4188FF" Offset="1"/>
+                                                        <GradientStop Color="#FF4BE2FF" Offset="0.08"/>
+                                                    </RadialGradientBrush>
                                                 </Setter.Value>
                                             </Setter>
                                         </Style.Setters>
@@ -473,7 +617,7 @@
 
                     </Grid>
                 </TabItem>
-                <TabItem>
+                <TabItem HorizontalAlignment="Right" Margin="-2,-2,-2,-0.2" Width="16">
                     <Grid  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"  Grid.RowSpan="3">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="40"/>
@@ -498,7 +642,7 @@
 
 
                         <TextBlock Text="Библиотекари" Foreground="{DynamicResource text_brush1}" FontSize="30" FontWeight="Bold" Margin="5" Grid.Row="1"/>
-                        <Button Click="Button_Click_1"
+                        <Button 
                         Style="{StaticResource CircleButton}"
                         ToolTip=">> Удалить"
                         Height="100" Grid.Row="4"
@@ -509,13 +653,13 @@
                             <Image Source="05-128.png"  Stretch="Fill" Width="100" Height="100" ></Image>
                         </Button>
 
-                        <Button Click="Button_Click_3"  Style="{StaticResource CircleButton}"  ToolTip=">> Сохранить" Height="100" Grid.Row="4" Grid.Column="2" Width="100"
+                        <Button  Style="{StaticResource CircleButton}"  ToolTip=">> Сохранить" Height="100" Grid.Row="4" Grid.Column="2" Width="100"
                         VerticalAlignment="Center" HorizontalAlignment="Center"
                         Background="Transparent"   >
                             <Image Source="Floppy-icon.png"  Stretch="Uniform" Width="auto" ></Image>
                         </Button>
 
-                        <Button Click="Button_Click_2"
+                        <Button 
                         Style="{StaticResource CircleButton}"
                         ToolTip=">> Добавить"
                         Height="100"
@@ -527,11 +671,11 @@
                         Background="Transparent" >
                             <Image Source="text-plus-icon.png"
                            Stretch="Fill"
-                           Width="auto" Height="104" ></Image>
+                           Width="auto" Height="100" ></Image>
                         </Button>
 
 
-              
+
                         <Grid Grid.Row="2" Grid.RowSpan="3"  Grid.ColumnSpan="3" >
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
@@ -548,7 +692,7 @@
                                 <DockPanel   >
                                     <Label Margin="0,19,0,0" DockPanel.Dock="Top" Height="auto"  HorizontalAlignment="Center">
                                         <TextBlock Foreground="Black" FontSize="20" FontFamily="Wide Latin">
-                                <Run>Ф.И.О:</Run>
+                                <Run>Text</Run>
                                         </TextBlock>
                                     </Label>
                                     <Border Height="30"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
@@ -561,7 +705,7 @@
                                 <DockPanel   >
                                     <Label Margin="0,19,0,0" DockPanel.Dock="Top" Height="auto"  HorizontalAlignment="Center">
                                         <TextBlock Foreground="Black" FontSize="20" FontFamily="Wide Latin">
-                                <Run>Контакты:</Run>
+                                <Run>Text:</Run>
                                         </TextBlock>
                                     </Label>
                                     <Border Height="60"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
@@ -591,12 +735,12 @@
                                         <GridViewColumn  Width="auto" DisplayMemberBinding="{Binding Path=Name}">
                                             <GridViewColumn.Header >
                                                 <TextBlock>
-                                <Run FontSize="15"  Foreground="Black"  FontWeight="Bold">Ф.И.О</Run>
+                                <Run FontSize="15"  Foreground="Black"  FontWeight="Bold">Text</Run>
                                                 </TextBlock>
                                             </GridViewColumn.Header>
                                         </GridViewColumn>
                                         <GridViewColumn  Width="auto"  DisplayMemberBinding="{Binding Path=Contact}">
-                                            <TextBlock Width="81"><Run Foreground="Black" FontWeight="Bold" FontSize="15" Text="Контакт"/>
+                                            <TextBlock Width="81"><Run Foreground="Black" FontWeight="Bold" FontSize="15" Text="Text"/>
                                         <Run Foreground="Black" FontWeight="Bold" FontSize="15" Text="и"/>
                                             </TextBlock>
                                         </GridViewColumn>
@@ -623,17 +767,1051 @@
 
                     </Grid>
                 </TabItem>
+                <TabItem HorizontalAlignment="Right" Margin="-2,-2,-2,-0.2" Width="16">
+                    <Grid  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"  Grid.RowSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="246*"/>
+                            <ColumnDefinition Width="250*"/>
+                            <ColumnDefinition Width="250*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="ButtonCloseMenu3" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0.333,5,0,0" Click="ButtonCloseMenu_Click" Visibility="Collapsed" Grid.Column="1">
+                            <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
+                        </Button>
+
+                        <Button ToolTip="Меню" x:Name="ButtonOpenMenu3" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0.333,0,0,5" Click="ButtonOpenMenu_Click" Grid.Column="1">
+                            <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
+                        </Button>
+
+
+                        <TextBlock Text="Читатели" Foreground="{DynamicResource text_brush1}" FontSize="30" FontWeight="Bold" Margin="0.333,5,4.4,4.6" Grid.Row="1" Grid.Column="1"/>
+                        <Button 
+                        Style="{StaticResource CircleButton}"
+                        ToolTip=">> Удалить"
+                        Height="100" Grid.Row="4"
+                        Grid.Column="2" Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                            Click="Button_Click_Delete"
+                        Background="Transparent" Margin="75.6,33.6,74.8,32.8" >
+                            <Image Source="05-128.png"  Stretch="Fill" Width="100" Height="100" ></Image>
+                        </Button>
+
+                        <Button  Style="{StaticResource CircleButton}" Click="Button_Click_Save"  ToolTip=">> Сохранить" Height="100" Grid.Row="4" Grid.Column="3" Width="100"
+                        VerticalAlignment="Center" HorizontalAlignment="Center"
+                        Background="Transparent" Margin="75.2,33.6,75.2,32.8"   >
+                            <Image Source="Floppy-icon.png"  Stretch="Uniform" Width="auto" ></Image>
+                        </Button>
+
+                        <Button 
+                        Style="{StaticResource CircleButton}"
+                        ToolTip=">> Добавить"
+                            Click="Button_Click_Add"
+                        Height="100"
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Background="Transparent" Margin="70.333,33.6,75.4,32.8" >
+                            <Image Source="text-plus-icon.png"
+                           Stretch="Fill"
+                           Width="auto" Height="100" ></Image>
+                        </Button>
+
+
+
+                        <Grid Grid.Row="2" Grid.RowSpan="3"  Grid.ColumnSpan="4" Margin="0,0.4,0.2,-0.2" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Background="GhostWhite" Margin="10"  BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                <DockPanel   >
+                                    <Label Margin="0,19,0,0" DockPanel.Dock="Top" Height="auto"  HorizontalAlignment="Center">
+                                        <TextBlock Foreground="Black" FontSize="20" FontFamily="Wide Latin">
+                                <Run>Name</Run>
+                                        </TextBlock>
+                                    </Label>
+                                    <Border Height="30"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                        <TextBox  Name="textbox_readers_name" Foreground="Black" >
+                                        </TextBox>
+                                    </Border>
+                                </DockPanel>
+                            </Border>
+                            <Border Background="GhostWhite" Margin="10"  BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="1" Grid.Column="2">
+                                <DockPanel   >
+                                    <Label Margin="0,19,0,0" DockPanel.Dock="Top" Height="auto"  HorizontalAlignment="Center">
+                                        <TextBlock Foreground="Black" FontSize="20" FontFamily="Wide Latin">
+                                <Run>Contact:</Run>
+                                        </TextBlock>
+                                    </Label>
+                                    <Border Height="60"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                        <TextBox  Name="textbox_readers_contact" Foreground="Black" >
+                                        </TextBox>
+                                    </Border>
+
+
+                                </DockPanel>
+                            </Border>
+
+                            <ListView 
+                                Margin="20,10" 
+                                Grid.Row="0" 
+                                Grid.RowSpan="2" 
+                                Grid.Column="0"  
+                                Grid.ColumnSpan="2"
+                        
+                              HorizontalAlignment="Stretch"
+                              Foreground="{DynamicResource text_brush2}"
+                              x:Name="list_Data_Readers" 
+                              IsSynchronizedWithCurrentItem="False"
+                              BorderBrush="#8987FF02" SelectionChanged="list_Data_SelectionChanged_1" >
+                                <ListView.View >
+                                    <GridView >
+                                        <GridViewColumn Width="auto"  DisplayMemberBinding="{Binding Path=Id}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                               <Run FontSize="15" Foreground="Black"  FontWeight="Bold">Id</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto" DisplayMemberBinding="{Binding Path=Name}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                                <Run FontSize="15"  Foreground="Black"  FontWeight="Bold">Name</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto"  DisplayMemberBinding="{Binding Path=Contact}">
+                                            <TextBlock Width="81"><Run Foreground="Black" FontWeight="Bold" FontSize="15" Text=""/>
+                                        <Run Foreground="Black" FontWeight="Bold" FontSize="15" Text="Contact"/>
+                                            </TextBlock>
+                                        </GridViewColumn>
+                                    </GridView>
+                                </ListView.View>
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="{x:Type ListViewItem}" >
+
+                                        <Style.Setters>
+                                            <Setter Property="Background">
+                                                <Setter.Value>
+                                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                        <GradientStop Color="Black" Offset="0.003"/>
+                                                        <GradientStop Color="#FF2A65C8" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style.Setters>
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+
+                        </Grid>
+
+                    </Grid>
+                </TabItem>
+                <TabItem HorizontalAlignment="Right" Margin="-2,-2,-2,-0.2" Width="16">
+                    <Grid  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"  Grid.RowSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="ButtonCloseMenu4"
+                                Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+                                Width="30"
+                                Height="30"
+                                Padding="0"
+                                Background="{x:Null}"
+                                BorderBrush="{x:Null}"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Left"
+                                Margin="5"
+                                Click="ButtonCloseMenu_Click"
+                                Visibility="Collapsed">
+                            <materialDesign:PackIcon
+                                Kind="Menu"
+                                Foreground="#FF3580BF"/>
+                        </Button>
+
+                        <Button 
+                            ToolTip="Меню"
+                            x:Name="ButtonOpenMenu4"
+                            Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+                            Width="30"
+                            Height="30"
+                            Padding="0"
+                            Background="{x:Null}"
+                            BorderBrush="{x:Null}"
+                            VerticalAlignment="Bottom"
+                            HorizontalAlignment="Left"
+                            Margin="5,0,0,5"
+                            Click="ButtonOpenMenu_Click">
+                            <materialDesign:PackIcon 
+                                Kind="Menu"
+                                Foreground="#FF3580BF"/>
+                        </Button>
+
+
+                        <TextBlock 
+                            Text="Категории"
+                            Foreground="{DynamicResource text_brush1}"
+                            FontSize="30"
+                            FontWeight="Bold"
+                            Margin="5"
+                            Grid.Row="1"/>
+                        <Button 
+                        Style="{StaticResource CircleButton}"
+                        ToolTip=">> Удалить"
+                            Click="Button_Click_Delete"
+                        Height="100" Grid.Row="4"
+                        Grid.Column="1" Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Background="Transparent" >
+                            <Image Source="05-128.png"  Stretch="Fill" Width="100" Height="100" ></Image>
+                        </Button>
+
+                        <Button  Style="{StaticResource CircleButton}"
+                                 ToolTip=">> Сохранить"
+                                 Click="Button_Click_Save"
+                                 Height="100" Grid.Row="4"
+                                 Grid.Column="2" Width="100"
+                                 VerticalAlignment="Center"
+                                 HorizontalAlignment="Center"
+                                 Background="Transparent"   >
+                            <Image Source="Floppy-icon.png"  Stretch="Uniform" Width="auto" ></Image>
+                        </Button>
+
+                        <Button 
+                            Style="{StaticResource CircleButton}"
+                            Click="Button_Click_Add"
+                            ToolTip=">> Добавить"
+                            Height="100"
+                            Grid.Row="4"
+                            Grid.Column="0"
+                            Width="100"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            Background="Transparent" >
+                            <Image Source="text-plus-icon.png"
+                               Stretch="Fill"
+                               Width="auto" Height="100" ></Image>
+                        </Button>
+
+
+
+                        <Grid Grid.Row="2" Grid.RowSpan="3"  Grid.ColumnSpan="3" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="4*"></ColumnDefinition>
+                                <ColumnDefinition Width="41*"/>
+                                <ColumnDefinition Width="206*"/>
+                                <ColumnDefinition Width="250*"></ColumnDefinition>
+                                <ColumnDefinition Width="250*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Background="GhostWhite" Margin="10.2,10,10.2,10.4"  BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="4">
+                                <DockPanel   >
+                                    <Label Margin="0,19,0,0" DockPanel.Dock="Top" Height="auto"  HorizontalAlignment="Center">
+                                        <TextBlock Foreground="Black" FontSize="20" FontFamily="Wide Latin">
+                                <Run>Text</Run>
+                                        </TextBlock>
+                                    </Label>
+                                    <Border Height="30"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                        <TextBox  Name="textbox_categoty_name" Foreground="Black" >
+                                        </TextBox>
+                                    </Border>
+                                </DockPanel>
+                            </Border>
+
+                            <ListView Margin="16.5,10,19.8,9.8" Grid.Row="0" Grid.RowSpan="2" Grid.Column="1"  Grid.ColumnSpan="3"
+                              HorizontalAlignment="Stretch"
+                              Foreground="{DynamicResource text_brush2}"
+                              x:Name="list_Data_category" 
+                              IsSynchronizedWithCurrentItem="False"
+                              BorderBrush="#8987FF02" SelectionChanged="list_Data_SelectionChanged_1" >
+                                <ListView.View >
+                                    <GridView >
+                                        <GridViewColumn Width="auto"  DisplayMemberBinding="{Binding Path=Id}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                               <Run FontSize="15" Foreground="Black"  FontWeight="Bold">Id</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto" DisplayMemberBinding="{Binding Path=Name}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                                <Run FontSize="15"  Foreground="Black"  FontWeight="Bold">Name</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+
+                                    </GridView>
+                                </ListView.View>
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="{x:Type ListViewItem}" >
+
+                                        <Style.Setters>
+                                            <Setter Property="Background">
+                                                <Setter.Value>
+                                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                        <GradientStop Color="Black" Offset="0.003"/>
+                                                        <GradientStop Color="#FF2A65C8" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style.Setters>
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+
+                        </Grid>
+
+                    </Grid>
+                </TabItem>
+                <TabItem HorizontalAlignment="Right" Margin="-2,-2,-2,-0.2" Width="16">
+                    <Grid  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"  Grid.RowSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="ButtonCloseMenu5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5" Click="ButtonCloseMenu_Click" Visibility="Collapsed">
+                            <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
+                        </Button>
+
+                        <Button ToolTip="Меню" x:Name="ButtonOpenMenu5" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" Click="ButtonOpenMenu_Click">
+                            <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
+                        </Button>
+
+
+                        <TextBlock Text="Авторы" Foreground="{DynamicResource text_brush1}" FontSize="30" FontWeight="Bold" Margin="5" Grid.Row="1"/>
+                        <Button 
+                            Click="Button_Click_Delete"
+                        Style="{StaticResource CircleButton}"
+                        ToolTip=">> Удалить"
+                        Height="100" Grid.Row="4"
+                        Grid.Column="1" Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Background="Transparent" >
+                            <Image Source="05-128.png"  Stretch="Fill" Width="100" Height="100" ></Image>
+                        </Button>
+
+                        <Button  Style="{StaticResource CircleButton}"
+                                 ToolTip=">> Сохранить"
+                                 Height="100"
+                                 Grid.Row="4"
+                                 Grid.Column="2"
+                                 Width="100"
+                                 VerticalAlignment="Center"
+                                 HorizontalAlignment="Center"
+                                 Click="Button_Click_Save"
+                                 Background="Transparent"   >
+                            <Image Source="Floppy-icon.png"
+                                   Stretch="Uniform" Width="auto" ></Image>
+                        </Button>
+
+                        <Button 
+                        Style="{StaticResource CircleButton}"
+                        ToolTip=">> Добавить"
+                        Height="100"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Background="Transparent"
+                            Click="Button_Click_Add" >
+                            <Image Source="text-plus-icon.png"
+                           Stretch="Fill"
+                           Width="auto" Height="100" ></Image>
+                        </Button>
+
+
+
+                        <Grid Grid.Row="2" Grid.RowSpan="3"  Grid.ColumnSpan="3" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Background="GhostWhite" Margin="10"  BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                <DockPanel   >
+                                    <Label Margin="0,19,0,0" DockPanel.Dock="Top" Height="auto"  HorizontalAlignment="Center">
+                                        <TextBlock Foreground="Black" FontSize="20" FontFamily="Wide Latin">
+                                <Run>Name</Run>
+                                        </TextBlock>
+                                    </Label>
+                                    <Border Height="30"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                        <TextBox  Name="textbox_autor_name" Foreground="Black" >
+                                        </TextBox>
+                                    </Border>
+                                </DockPanel>
+                            </Border>
+
+                            <ListView Margin="20,10"
+                                      Grid.Row="0"
+                                      Grid.RowSpan="2"
+                                      Grid.Column="0"
+                                      Grid.ColumnSpan="2"
+                              HorizontalAlignment="Stretch"
+                              Foreground="{DynamicResource text_brush2}"
+                              x:Name="list_Data_autor" 
+                              IsSynchronizedWithCurrentItem="False"
+                              BorderBrush="#8987FF02" SelectionChanged="list_Data_SelectionChanged_1" >
+                                <ListView.View >
+                                    <GridView >
+                                        <GridViewColumn Width="auto"  DisplayMemberBinding="{Binding Path=Id}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                               <Run FontSize="15" Foreground="Black"  FontWeight="Bold">Id</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto" DisplayMemberBinding="{Binding Path=Name}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                                <Run FontSize="15"  Foreground="Black"  FontWeight="Bold">Name</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+
+                                    </GridView>
+                                </ListView.View>
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="{x:Type ListViewItem}" >
+
+                                        <Style.Setters>
+                                            <Setter Property="Background">
+                                                <Setter.Value>
+                                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                        <GradientStop Color="Black" Offset="0.003"/>
+                                                        <GradientStop Color="#FF2A65C8" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style.Setters>
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+
+                        </Grid>
+
+                    </Grid>
+                </TabItem>
+                <TabItem HorizontalAlignment="Right" Margin="-2,-2,-2,-0.2" Width="16">
+                    <Grid  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"  Grid.RowSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="ButtonCloseMenu6" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5" Click="ButtonCloseMenu_Click" Visibility="Collapsed">
+                            <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
+                        </Button>
+
+                        <Button ToolTip="Меню" x:Name="ButtonOpenMenu6" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" Click="ButtonOpenMenu_Click">
+                            <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
+                        </Button>
+
+
+                        <TextBlock Text="Книги" Foreground="{DynamicResource text_brush1}" FontSize="30" FontWeight="Bold" Margin="5" Grid.Row="1"/>
+                        <Button 
+                        Style="{StaticResource CircleButton}"
+                        ToolTip=">> Удалить"
+                        Height="100" Grid.Row="4"
+                        Grid.Column="1" Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Background="Transparent"
+                            Click="Button_Click_Delete">
+                            <Image Source="05-128.png"  Stretch="Fill" Width="100" Height="100" ></Image>
+                        </Button>
+
+                        <Button  Style="{StaticResource CircleButton}"  ToolTip=">> Сохранить" Height="100" Grid.Row="4" Grid.Column="2" Width="100"
+                        VerticalAlignment="Center" HorizontalAlignment="Center"
+                        Background="Transparent" Click="Button_Click_Save"   >
+                            <Image Source="Floppy-icon.png"  Stretch="Uniform" Width="auto" ></Image>
+                        </Button>
+
+                        <Button 
+                        Style="{StaticResource CircleButton}"
+                        ToolTip=">> Добавить"
+                        Height="100"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Background="Transparent" Click="Button_Click_Add">
+                            <Image Source="text-plus-icon.png"
+                           Stretch="Fill"
+                           Width="auto" Height="100" ></Image>
+                        </Button>
+
+
+
+                        <Grid Grid.Row="2" Grid.RowSpan="3"  Grid.ColumnSpan="3" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Background="GhostWhite" Margin="10"  BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                <DockPanel   >
+                                    <Label Margin="0,6,0,0" DockPanel.Dock="Top" Height="auto"  HorizontalAlignment="Center">
+                                        <TextBlock Foreground="Black" FontSize="15" FontFamily="Wide Latin">
+                                <Run>Name</Run>
+                                        </TextBlock>
+                                    </Label>
+                                    <Border Height="30" DockPanel.Dock="Top"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                        <TextBox  Name="textbox_books_name" Foreground="Black" FontSize="10" >
+                                        </TextBox>
+                                    </Border>
+
+                                    <Grid DockPanel.Dock="Bottom">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0" Grid.Column="0"  Height="auto" VerticalAlignment="Center"  HorizontalAlignment="Center">
+                                            <TextBlock Foreground="Black" FontSize="12" FontFamily="Wide Latin"><Run>Year</Run>
+                                            </TextBlock>
+                                        </Label>
+                                        <Border Grid.Column="0"  Grid.Row="1" Grid.RowSpan="2"  Height="30"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
+                                            <TextBox  Name="textbox_books_year" Foreground="Black" FontSize="10" >
+                                            </TextBox>
+                                        </Border>
+                                        <Label Grid.Row="0" Grid.Column="1"  Height="auto" VerticalAlignment="Center"  HorizontalAlignment="Center">
+                                            <TextBlock Foreground="Black" FontSize="12" FontFamily="Wide Latin"><Run>Pages</Run>
+                                            </TextBlock>
+                                        </Label>
+                                        <Border Grid.Column="1"  Grid.Row="1" Grid.RowSpan="2"   Height="30"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
+                                            <TextBox  Name="textbox_books_pages" Foreground="Black" FontSize="10" Margin="0.2,-0.8,0,0.2">
+                                            </TextBox>
+                                        </Border>
+                                        <Label Grid.Row="0" Grid.Column="2"  Height="auto" VerticalAlignment="Center"  HorizontalAlignment="Center">
+                                            <TextBlock Foreground="Black" FontSize="12" FontFamily="Wide Latin"><Run>Price</Run>
+                                            </TextBlock>
+                                        </Label>
+                                        <Border Grid.Column="2"  Grid.Row="1"  Grid.RowSpan="2"  Height="30"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
+                                            <TextBox  Name="textbox_books_price" Foreground="Black" FontSize="10">
+                                            </TextBox>
+                                        </Border>
+
+                                    </Grid>
+                                </DockPanel>
+                            </Border>
+                            <Border Background="GhostWhite" Margin="10"  BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="1" Grid.Column="2">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition ></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                                              ScrollViewer.VerticalScrollBarVisibility="Visible"
+                                              MaxHeight="200"  Grid.Column="0"
+                                              Grid.Row="0" Background="White" VerticalAlignment="Top" Margin="0,20"
+                                              Name="ComboBox_Genres" Width="180" Height="30"  Grid.RowSpan="2"   
+                                              >
+                                   
+                                        <ComboBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <WrapPanel Margin="3,0">
+                                                    <TextBlock HorizontalAlignment="Center"
+                                                               FontWeight="Bold"
+                                                               FontSize="14" Name="tmp"
+                                                               Text="{Binding Name}">
+                                                    </TextBlock>
+                                                </WrapPanel>
+                                            </DataTemplate>
+                                        </ComboBox.ItemTemplate>
+                                    </ComboBox>
+
+                                    <ComboBox ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                                              ScrollViewer.VerticalScrollBarVisibility="Visible"
+                                              MaxHeight="200" Grid.Row="1"
+                                              DockPanel.Dock="Top" VerticalAlignment="Center"
+                                              Name="ComboBox_Publishers" Background="White"  Width="180" Height="30"  
+                                              >
+                                        
+                                        <ComboBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <WrapPanel Margin="3,0">
+                                                    <TextBlock HorizontalAlignment="Center"
+                                                               FontWeight="Bold"
+                                                               FontSize="14"
+                                                               Name="tmp2"
+                                                               Text="{Binding Name}">
+                                                    </TextBlock>
+                                                </WrapPanel>
+                                            </DataTemplate>
+                                        </ComboBox.ItemTemplate>
+                                    </ComboBox>
+
+                                </Grid>
+                            </Border>
+
+                            <ListView Margin="20,10" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0"  Grid.ColumnSpan="2"
+                              HorizontalAlignment="Stretch"
+                              Foreground="{DynamicResource text_brush2}"
+                              x:Name="list_Data_books" 
+                              IsSynchronizedWithCurrentItem="False"
+                              BorderBrush="#8987FF02" SelectionChanged="list_Data_SelectionChanged_1" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="False" >
+                                <ListView.View >
+                                    <GridView >
+                                        <GridViewColumn Width="auto"  DisplayMemberBinding="{Binding Path=Id}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                               <Run FontSize="15" Foreground="Black"  FontWeight="Bold">Id</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto" DisplayMemberBinding="{Binding Path=Name}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                                <Run FontSize="15"  Foreground="Black"  FontWeight="Bold">Name</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto"  DisplayMemberBinding="{Binding Path=GenreId}">
+                                            <TextBlock Width="81"><Run Foreground="Black" FontWeight="Bold" FontSize="15" Text="GenreId"/>
+                                        <Run Foreground="Black" FontWeight="Bold" FontSize="15" Text=""/>
+                                            </TextBlock>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto"  DisplayMemberBinding="{Binding Path=PublisherId}">
+                                            <TextBlock Width="auto"><Run Foreground="Black" FontWeight="Bold" FontSize="15" Text="PublisherId"/>
+                                        <Run Foreground="Black" FontWeight="Bold" FontSize="15" Text=""/>
+                                            </TextBlock>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto"  DisplayMemberBinding="{Binding Path=Year}">
+                                            <TextBlock Width="auto"><Run Foreground="Black" FontWeight="Bold" FontSize="15" Text="Year"/>
+                                        <Run Foreground="Black" FontWeight="Bold" FontSize="15" Text=""/>
+                                            </TextBlock>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto"  DisplayMemberBinding="{Binding Path=Pages}">
+                                            <TextBlock Width="auto"><Run Foreground="Black" FontWeight="Bold" FontSize="15" Text="Pages"/>
+                                        <Run Foreground="Black" FontWeight="Bold" FontSize="15" Text=""/>
+                                            </TextBlock>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto"  DisplayMemberBinding="{Binding Path=Price}">
+                                            <TextBlock Width="auto"><Run Foreground="Black" FontWeight="Bold" FontSize="15" Text="Price"/>
+                                        <Run Foreground="Black" FontWeight="Bold" FontSize="15" Text=""/>
+                                            </TextBlock>
+                                        </GridViewColumn>
+                                    </GridView>
+                                </ListView.View>
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="{x:Type ListViewItem}" >
+
+                                        <Style.Setters>
+                                            <Setter Property="Background">
+                                                <Setter.Value>
+                                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                        <GradientStop Color="Black" Offset="0.003"/>
+                                                        <GradientStop Color="#FF2A65C8" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style.Setters>
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+
+                        </Grid>
+
+                    </Grid>
+                </TabItem>
+                <TabItem HorizontalAlignment="Right" Margin="-2,-2,-2,-0.2" Width="16">
+                    <Grid  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"  Grid.RowSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="ButtonCloseMenu7" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5" Click="ButtonCloseMenu_Click" Visibility="Collapsed">
+                            <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
+                        </Button>
+
+                        <Button ToolTip="Меню" x:Name="ButtonOpenMenu7" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" Click="ButtonOpenMenu_Click">
+                            <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
+                        </Button>
+
+
+                        <TextBlock Text="Журнал" Foreground="{DynamicResource text_brush1}" FontSize="30" FontWeight="Bold" Margin="5" Grid.Row="1"/>
+                        <Button 
+                        Style="{StaticResource CircleButton}"
+                        ToolTip=">> Удалить"
+                        Height="100" Grid.Row="4"
+                        Grid.Column="1" Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Background="Transparent" >
+                            <Image Source="05-128.png"  Stretch="Fill" Width="100" Height="100" ></Image>
+                        </Button>
+
+                        <Button  Style="{StaticResource CircleButton}"  ToolTip=">> Сохранить" Height="100" Grid.Row="4" Grid.Column="2" Width="100"
+                        VerticalAlignment="Center" HorizontalAlignment="Center"
+                        Background="Transparent"   >
+                            <Image Source="Floppy-icon.png"  Stretch="Uniform" Width="auto" ></Image>
+                        </Button>
+
+                        <Button 
+                        Style="{StaticResource CircleButton}"
+                        ToolTip=">> Добавить"
+                        Height="100"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Background="Transparent" >
+                            <Image Source="text-plus-icon.png"
+                           Stretch="Fill"
+                           Width="auto" Height="100" ></Image>
+                        </Button>
+
+
+
+                        <Grid Grid.Row="2" Grid.RowSpan="3"  Grid.ColumnSpan="3" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Background="GhostWhite" Margin="10"  BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                <DockPanel   >
+                                    <Label Margin="0,19,0,0" DockPanel.Dock="Top" Height="auto"  HorizontalAlignment="Center">
+                                        <TextBlock Foreground="Black" FontSize="20" FontFamily="Wide Latin">
+                                <Run>Text</Run>
+                                        </TextBlock>
+                                    </Label>
+                                    <Border Height="30"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                        <TextBox  Name="textbox1111111" Foreground="Black" >
+                                        </TextBox>
+                                    </Border>
+                                </DockPanel>
+                            </Border>
+                            <Border Background="GhostWhite" Margin="10"  BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="1" Grid.Column="2">
+                                <DockPanel   >
+                                    <Label Margin="0,19,0,0" DockPanel.Dock="Top" Height="auto"  HorizontalAlignment="Center">
+                                        <TextBlock Foreground="Black" FontSize="20" FontFamily="Wide Latin">
+                                <Run>Text:</Run>
+                                        </TextBlock>
+                                    </Label>
+                                    <Border Height="60"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                        <TextBox  Name="textbox2222222" Foreground="Black" >
+                                        </TextBox>
+                                    </Border>
+
+
+                                </DockPanel>
+                            </Border>
+
+                            <ListView Margin="20,10" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0"  Grid.ColumnSpan="2"
+                              HorizontalAlignment="Stretch"
+                              Foreground="{DynamicResource text_brush2}"
+                              x:Name="list_Data222222" 
+                              IsSynchronizedWithCurrentItem="False"
+                              BorderBrush="#8987FF02" SelectionChanged="list_Data_SelectionChanged_1" >
+                                <ListView.View >
+                                    <GridView >
+                                        <GridViewColumn Width="auto"  DisplayMemberBinding="{Binding Path=Id}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                               <Run FontSize="15" Foreground="Black"  FontWeight="Bold">Id</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto" DisplayMemberBinding="{Binding Path=Name}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                                <Run FontSize="15"  Foreground="Black"  FontWeight="Bold">Text</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto"  DisplayMemberBinding="{Binding Path=Contact}">
+                                            <TextBlock Width="81"><Run Foreground="Black" FontWeight="Bold" FontSize="15" Text="Text"/>
+                                        <Run Foreground="Black" FontWeight="Bold" FontSize="15" Text="и"/>
+                                            </TextBlock>
+                                        </GridViewColumn>
+                                    </GridView>
+                                </ListView.View>
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="{x:Type ListViewItem}" >
+
+                                        <Style.Setters>
+                                            <Setter Property="Background">
+                                                <Setter.Value>
+                                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                        <GradientStop Color="Black" Offset="0.003"/>
+                                                        <GradientStop Color="#FF2A65C8" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style.Setters>
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+
+                        </Grid>
+
+                    </Grid>
+                </TabItem>
+                <TabItem HorizontalAlignment="Right" Margin="-2,-2,-2,-0.2" Width="16">
+                    <Grid  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"  Grid.RowSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="ButtonCloseMenu8" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5" Click="ButtonCloseMenu_Click" Visibility="Collapsed">
+                            <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
+                        </Button>
+
+                        <Button ToolTip="Меню" x:Name="ButtonOpenMenu8" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" Click="ButtonOpenMenu_Click">
+                            <materialDesign:PackIcon Kind="Menu" Foreground="#FF3580BF"/>
+                        </Button>
+
+
+                        <TextBlock Text="Издатель"
+                                   Foreground="{DynamicResource text_brush1}"
+                                   FontSize="30"
+                                   FontWeight="Bold"
+                                   Margin="5"
+                                   Grid.Row="1"/>
+                        <Button 
+                        Style="{StaticResource CircleButton}"
+                        ToolTip=">> Удалить"
+                        Height="100" Grid.Row="4"
+                        Grid.Column="1" Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Background="Transparent"
+                            Click="Button_Click_Delete">
+                            <Image Source="05-128.png"  Stretch="Fill" Width="100" Height="100" ></Image>
+                        </Button>
+
+                        <Button  Style="{StaticResource CircleButton}"  ToolTip=">> Сохранить" Height="100" Grid.Row="4" Grid.Column="2" Width="100"
+                        VerticalAlignment="Center" HorizontalAlignment="Center"
+                        Background="Transparent"
+                                 Click="Button_Click_Save">
+                            <Image Source="Floppy-icon.png"  Stretch="Uniform" Width="auto" ></Image>
+                        </Button>
+
+                        <Button 
+                        Style="{StaticResource CircleButton}"
+                        ToolTip=">> Добавить"
+                        Height="100"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Width="100"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Background="Transparent"
+                            Click="Button_Click_Add">
+                            <Image Source="text-plus-icon.png"
+                           Stretch="Fill"
+                           Width="auto" Height="100" ></Image>
+                        </Button>
+
+
+
+                        <Grid Grid.Row="2" Grid.RowSpan="3"  Grid.ColumnSpan="3" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Background="GhostWhite" Margin="10"  BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                <DockPanel   >
+                                    <Label Margin="0,19,0,0" DockPanel.Dock="Top" Height="auto"  HorizontalAlignment="Center">
+                                        <TextBlock Foreground="Black" FontSize="20" FontFamily="Wide Latin">
+                                <Run>Name</Run>
+                                        </TextBlock>
+                                    </Label>
+                                    <Border Height="30"  Background="GhostWhite" Margin="10,0" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3" Grid.Row="0" Grid.Column="2">
+                                        <TextBox  Name="textbox_publisher_name" Foreground="Black" >
+                                        </TextBox>
+                                    </Border>
+                                </DockPanel>
+                            </Border>
+
+                            <ListView Margin="20,10"
+                                      Grid.Row="0"
+                                      Grid.RowSpan="2"
+                                      Grid.Column="0"
+                                      Grid.ColumnSpan="2"
+                              HorizontalAlignment="Stretch"
+                              Foreground="{DynamicResource text_brush2}"
+                              x:Name="list_Data_publisher" 
+                              IsSynchronizedWithCurrentItem="False"
+                              BorderBrush="#8987FF02" SelectionChanged="list_Data_SelectionChanged_1" >
+                                <ListView.View >
+                                    <GridView >
+                                        <GridViewColumn Width="auto"  DisplayMemberBinding="{Binding Path=Id}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                               <Run FontSize="15" Foreground="Black"  FontWeight="Bold">Id</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+                                        <GridViewColumn  Width="auto" DisplayMemberBinding="{Binding Path=Name}">
+                                            <GridViewColumn.Header >
+                                                <TextBlock>
+                                <Run FontSize="15"  Foreground="Black"  FontWeight="Bold">Name</Run>
+                                                </TextBlock>
+                                            </GridViewColumn.Header>
+                                        </GridViewColumn>
+                                    </GridView>
+                                </ListView.View>
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="{x:Type ListViewItem}" >
+
+                                        <Style.Setters>
+                                            <Setter Property="Background">
+                                                <Setter.Value>
+                                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                        <GradientStop Color="Black" Offset="0.003"/>
+                                                        <GradientStop Color="#FF2A65C8" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style.Setters>
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+
+                        </Grid>
+
+                    </Grid>
+                </TabItem>
             </TabControl>
         </Grid>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="40" HorizontalAlignment="Right" Margin="0,10,9.6,0" Grid.RowSpan="2">
-            <Button Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}">
-                <materialDesign:PackIcon Kind="Bell"/>
+        <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Top"
+                    Height="40"
+                    HorizontalAlignment="Right"
+                    Margin="0,10,9.6,0"
+                    Grid.RowSpan="2">
+            <Button Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+                    Width="30"
+                    Height="30"
+                    Padding="0"
+                    Background="{x:Null}"
+                    BorderBrush="{x:Null}">
+                <materialDesign:PackIcon
+                    Kind="Bell"/>
             </Button>
-            <Button ToolTip="Закрыть программу" x:Name="ButtonClose" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" Click="ButtonClose_Click">
+            <Button ToolTip="Закрыть программу"
+                    x:Name="ButtonClose"
+                    Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+                    Width="30"
+                    Height="30"
+                    Padding="0"
+                    Background="{x:Null}"
+                    BorderBrush="{x:Null}"
+                    Click="ButtonClose_Click">
                 <materialDesign:PackIcon Kind="Power"/>
             </Button>
         </StackPanel>
-        
+
     </Grid>
 
 
